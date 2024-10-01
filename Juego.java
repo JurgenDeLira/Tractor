@@ -43,18 +43,16 @@ public class Juego extends JPanel {
                 // el salto se activa cuando se presiona la tecla espacio
                 if(e.getKeyCode()==KeyEvent.VK_SPACE){
                     sonidoSalto.Play();
-
+                    auto.keyPressed(e);
                 }
 
             }
-
             @Override
             public void keyReleased(KeyEvent e) {
 
             }
         });
-
-
+        setFocusable(true);
 
     }
 }
